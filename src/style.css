@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Yekan";
+    src: url(./assets/yekan/YekanBakh-Thin.woff2);
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Yekan";
+    src: url(./assets/yekan/YekanBakh-Light.woff2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Yekan";
+    src: url(./assets/yekan/YekanBakhFaNum-Bold.woff2);
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: "Yekan";
+    src: url(./assets/yekan/YekanBakhFaNum-Regular.woff2);
+    font-style: normal;
+    font-weight: 450;
+  }
+  @font-face {
+    font-family: "Yekan";
+    src: url(./assets/yekan/YekanBakh-Regular.woff2);
+    font-style: normal;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Yekan";
+    src: url(./assets/yekan/YekanBakh-Medium.woff2);
+    font-style: normal;
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Yekan";
+    src: url(./assets/yekan/YekanBakhFaNum-SemiBold.woff2);
+    font-style: normal;
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "Yekan";
+    src: url(./assets/yekan/YekanBakhFaNum-Black.woff2);
+    font-style: normal;
+    font-weight: 800;
+  }
+
+  body {
+    @apply font-['Yekan','sens-serif'];
+  }
+}
