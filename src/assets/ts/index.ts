@@ -2,7 +2,7 @@ const tabLinks = document.querySelectorAll(".tab-link");
 const tabContents = document.querySelectorAll(".tab-content");
 
 tabLinks.forEach((link) => {
-  link.addEventListener("click", (ev) => {
+  link.addEventListener("click", () => {
     tabLinks.forEach((item) => {
       item.classList.remove("active-tab");
     });
