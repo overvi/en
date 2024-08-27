@@ -10,9 +10,146 @@
   </head>
 
   <body class="pt-5 font-['Montserrat','sens-serif'] text-[14px]">
-    <header class="m-auto max-w-[80rem] space-y-10">
-      <nav class="flex items-center gap-12">
-        <img width="150" src="/assets/images/mango-logo.png" alt="" />
+    <div class="sidebar fixed inset-0 z-40 hidden h-full bg-black-19">
+      <div
+        class="sidebar-content flex h-screen w-[17rem] flex-col rounded-tr-[2.5rem] bg-white px-9 py-8 shadow-xl"
+      >
+        <button class="mt-16 rounded-lg bg-orange-400 px-8 py-2">
+          Sign up / Sign in
+        </button>
+        <ul class="mt-8 space-y-5">
+          <li>
+            <div class="flex items-center justify-between">
+              <a href="">Features</a>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
+                  fill="#FBB040"
+                />
+                <path
+                  d="M12.0225 8.60252L9.7725 6.35252C9.555 6.13502 9.195 6.13502 8.9775 6.35252C8.76 6.57002 8.76 6.93002 8.9775 7.14752L10.2675 8.43752H6.375C6.0675 8.43752 5.8125 8.69252 5.8125 9.00002C5.8125 9.30752 6.0675 9.56252 6.375 9.56252H10.2675L8.9775 10.8525C8.76 11.07 8.76 11.43 8.9775 11.6475C9.09 11.76 9.2325 11.8125 9.375 11.8125C9.5175 11.8125 9.66 11.76 9.7725 11.6475L12.0225 9.39752C12.24 9.18002 12.24 8.82002 12.0225 8.60252Z"
+                  fill="#FBB040"
+                />
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center justify-between">
+              <a href="">About Us</a
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
+                  fill="#FBB040"
+                />
+                <path
+                  d="M12.0225 8.60252L9.7725 6.35252C9.555 6.13502 9.195 6.13502 8.9775 6.35252C8.76 6.57002 8.76 6.93002 8.9775 7.14752L10.2675 8.43752H6.375C6.0675 8.43752 5.8125 8.69252 5.8125 9.00002C5.8125 9.30752 6.0675 9.56252 6.375 9.56252H10.2675L8.9775 10.8525C8.76 11.07 8.76 11.43 8.9775 11.6475C9.09 11.76 9.2325 11.8125 9.375 11.8125C9.5175 11.8125 9.66 11.76 9.7725 11.6475L12.0225 9.39752C12.24 9.18002 12.24 8.82002 12.0225 8.60252Z"
+                  fill="#FBB040"
+                />
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center justify-between">
+              <a href="">Contact Us</a
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
+                  fill="#FBB040"
+                />
+                <path
+                  d="M12.0225 8.60252L9.7725 6.35252C9.555 6.13502 9.195 6.13502 8.9775 6.35252C8.76 6.57002 8.76 6.93002 8.9775 7.14752L10.2675 8.43752H6.375C6.0675 8.43752 5.8125 8.69252 5.8125 9.00002C5.8125 9.30752 6.0675 9.56252 6.375 9.56252H10.2675L8.9775 10.8525C8.76 11.07 8.76 11.43 8.9775 11.6475C9.09 11.76 9.2325 11.8125 9.375 11.8125C9.5175 11.8125 9.66 11.76 9.7725 11.6475L12.0225 9.39752C12.24 9.18002 12.24 8.82002 12.0225 8.60252Z"
+                  fill="#FBB040"
+                />
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <header class="m-auto max-w-[80rem] space-y-10 px-4">
+      <nav
+        class="flex flex-col items-center justify-center gap-6 md:flex-row lg:gap-12"
+      >
+        <div class="flex w-full items-center justify-between md:w-auto">
+          <img width="150" src="/assets/images/mango-logo.png" alt="" />
+          <div
+            class="flex items-center gap-3 rounded-full bg-[#F2F2F2] p-2 md:hidden"
+          >
+            <button>
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="17" cy="17" r="17" fill="#FBB040" />
+                <path
+                  opacity="0.4"
+                  d="M26.09 26.5C26.09 26.78 25.87 27 25.59 27H8.41C8.13 27 7.91 26.78 7.91 26.5C7.91 22.36 11.99 19 17 19C18.03 19 19.03 19.14 19.95 19.41C19.36 20.11 19 21.02 19 22C19 22.75 19.21 23.46 19.58 24.06C19.78 24.4 20.04 24.71 20.34 24.97C21.04 25.61 21.97 26 23 26C24.12 26 25.13 25.54 25.85 24.8C26.01 25.34 26.09 25.91 26.09 26.5Z"
+                  fill="black"
+                />
+                <path
+                  d="M25.97 19.33C25.25 18.51 24.18 18 23 18C21.88 18 20.86 18.46 20.13 19.21C19.43 19.93 19 20.92 19 22C19 22.75 19.21 23.46 19.58 24.06C19.78 24.4 20.04 24.71 20.34 24.97C21.04 25.61 21.97 26 23 26C24.46 26 25.73 25.22 26.42 24.06C26.63 23.72 26.79 23.33 26.88 22.93C26.96 22.63 27 22.32 27 22C27 20.98 26.61 20.04 25.97 19.33ZM24.5 22.73H23.75V23.51C23.75 23.92 23.41 24.26 23 24.26C22.59 24.26 22.25 23.92 22.25 23.51V22.73H21.5C21.09 22.73 20.75 22.39 20.75 21.98C20.75 21.57 21.09 21.23 21.5 21.23H22.25V20.52C22.25 20.11 22.59 19.77 23 19.77C23.41 19.77 23.75 20.11 23.75 20.52V21.23H24.5C24.91 21.23 25.25 21.57 25.25 21.98C25.25 22.39 24.91 22.73 24.5 22.73Z"
+                  fill="black"
+                />
+                <path
+                  d="M17 17C19.7614 17 22 14.7614 22 12C22 9.23858 19.7614 7 17 7C14.2386 7 12 9.23858 12 12C12 14.7614 14.2386 17 17 17Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+            <button class="toggle-sidebar">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 7H21"
+                  stroke="#767676"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M3 12H21"
+                  stroke="#767676"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M3 17H21"
+                  stroke="#767676"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
         <ul class="flex items-center gap-8">
           <li>
             <a href="" class="transition-all hover:text-gray-500">Features</a>
@@ -23,34 +160,46 @@
           <li>
             <a class="transition-all hover:text-gray-500" href="">Contact Us</a>
           </li>
-          <li>
+          <li class="hidden md:block">
             <a class="transition-all hover:text-gray-500" href=""
               >Our Partners</a
             >
           </li>
         </ul>
-        <img class="w-[30%]" src="/assets/images/line-orange.png" alt="" />
-        <button class="rounded-lg bg-orange-400 px-8 py-2">
+        <img
+          class="hidden w-[10%] md:block min-[1200px]:w-[25%] min-[1250px]:w-[28%]"
+          src="/assets/images/line-orange.png"
+          alt=""
+        />
+        <button class="hidden rounded-lg bg-orange-400 px-8 py-2 md:block">
           Sign up / Sign in
         </button>
       </nav>
-      <div class="relative min-h-[650px] bg-header bg-contain bg-no-repeat">
-        <div class="m-auto w-fit space-y-3 text-center">
-          <h1 class="text-5xl font-bold text-orange-400">Mangotravel</h1>
-          <p class="text-4xl font-thin">
+      <div
+        class="bg-header-small relative bg-contain bg-no-repeat high-sm:bg-header md:h-0 md:pt-[50.22%]"
+      >
+        <div
+          class="absolute left-0 right-0 top-2 m-auto w-fit space-y-3 text-center md:top-12"
+        >
+          <h1 class="text-2xl font-bold text-orange-400 md:text-5xl">
+            Mangotravel
+          </h1>
+          <p class="text-2xl high-sm:text-4xl high-sm:font-thin">
             A new experience of hotel booking for businesses!
           </p>
-          <p class="font-light">
+          <p class="px-2 font-light">
             Efficiency, security and support in a comprehensive panel
           </p>
         </div>
         <div
-          class="absolute bottom-0 left-0 right-0 m-auto flex w-fit translate-y-1/2 gap-8 rounded-3xl bg-white p-5"
+          class="static bottom-0 left-6 right-6 m-auto flex w-fit translate-y-1/2 flex-col gap-8 rounded-3xl bg-white p-5 shadow-sm md:absolute md:flex-row"
         >
           <div class="rounded-2xl bg-gray-200 p-3">
             <h2 class="text-2xl font-bold">Awsome Places</h2>
             <p class="font-light">Discover the word one adventure at a time!</p>
-            <div class="mt-4 flex items-center gap-4">
+            <div
+              class="mt-4 flex flex-col items-center gap-4 min-[1178px]:flex-row"
+            >
               <div>
                 <img src="/assets/images/books.png" alt="" />
               </div>
@@ -59,10 +208,12 @@
               </button>
             </div>
           </div>
-          <div class="grid max-w-[40rem] grid-cols-2 gap-2 gap-x-24">
+          <div
+            class="grid max-w-[40rem] grid-cols-1 gap-6 gap-x-24 sm:grid-cols-2 sm:gap-2"
+          >
             <div>
               <h2 class="text-[1rem] font-medium">
-                <span class="text-2xl font-bold">+1</span>M Hotels and
+                <span class="text-3xl font-bold">+1</span>M Hotels and
                 properties
               </h2>
               <p class="font-light">More than 7500 destinations and cites</p>
@@ -75,10 +226,10 @@
                 including travel agencies, tour operators and TMCs
               </p>
             </div>
-            <div>
+            <div class="hidden sm:block">
               <img src="/assets/images/line-orange.png" alt="" />
             </div>
-            <div>
+            <div class="hidden sm:block">
               <img src="/assets/images/line-orange.png" alt="" />
             </div>
             <div>
@@ -100,9 +251,11 @@
       </div>
     </header>
 
-    <main class="mt-44">
-      <section class="m-auto flex max-w-[80rem] gap-8 *:basis-full">
-        <div class="self-end">
+    <main class="mt-[22rem] md:mt-44">
+      <section
+        class="m-auto flex max-w-[80rem] flex-col gap-8 px-4 *:basis-full md:flex-row"
+      >
+        <div class="self-end text-[1rem] font-light">
           <h1 class="relative ml-3 text-3xl font-bold">
             Features of <br />
             <span class="text-orange-400">Mangotravel</span> !
@@ -121,18 +274,20 @@
             </svg>
           </h1>
           <p class="mt-20">Mangotravel's unique features includes:</p>
-          <ul class="list-disc">
-            <li>offering a corporate panel and API as a B2B</li>
-            <li>contract with the world's top suppliers</li>
+          <ul class="list-disc px-4">
+            <li class="font-medium">
+              offering a corporate panel and API as a B2B
+            </li>
+            <li class="font-medium">contract with the world's top suppliers</li>
             <li>
               offline settlement and many more which provides businesses with an
               efficient and perfect hotel booking experience.
             </li>
           </ul>
         </div>
-        <div class="self-end">
+        <div class="md:self-end">
           <div
-            class="relative flex h-[294px] flex-col justify-between rounded-3xl bg-gray-200 p-4 px-6 py-14"
+            class="relative flex h-[264px] w-full flex-col justify-between rounded-3xl bg-gray-200 p-4 px-6 py-14"
           >
             <svg
               width="76"
@@ -163,7 +318,7 @@
 
             <p class="text-xl font-bold">Corporate panel</p>
             <svg
-              class="absolute left-0 -translate-x-full"
+              class="absolute left-0 hidden -translate-x-full md:block"
               width="200"
               height="44"
               viewBox="0 0 231 44"
@@ -225,8 +380,10 @@
         </div>
       </section>
       <section class="mt-16 bg-orange-400 p-5">
-        <div class="m-auto flex max-w-[80rem] items-center gap-32 *:basis-full">
-          <ul class="space-y-8">
+        <div
+          class="m-auto flex max-w-[80rem] items-center gap-32 px-4 *:basis-full"
+        >
+          <ul class="hidden space-y-8 md:block">
             <li>
               <div
                 class="py-.5 w-fit rounded-full bg-white px-8 text-2xl font-bold text-green-700"
@@ -292,16 +449,18 @@
               </p>
             </li>
           </ul>
-          <div class="relative z-0 flex">
+          <div
+            class="relative z-0 m-auto flex max-w-[37rem] md:m-0 md:max-w-[auto]"
+          >
             <img
-              class="absolute bottom-0 right-0 top-0 -z-10 m-auto"
+              class="absolute right-0 top-0 -z-10 m-auto rounded-[5rem] md:bottom-0"
               src="/assets/images/benefits.png"
               alt=""
             />
             <div
-              class="max-w-[17rem] overflow-hidden rounded-b-[6rem] rounded-tl-[7rem] rounded-tr-xl bg-white p-12 py-16"
+              class="max-w-[19rem] overflow-hidden rounded-b-[6rem] rounded-tl-[4rem] rounded-tr-xl bg-white p-6 py-16 md:max-w-[17rem] md:rounded-tl-[7rem] md:p-12"
             >
-              <div>
+              <div class="hidden md:block">
                 <svg
                   width="249"
                   height="45"
@@ -325,14 +484,91 @@
                 exceptional and efficient experience for our clients and to be
                 the top choice in the tourism and hotel reservation industry.
               </p>
+              <ul class="mt-20 space-y-5 font-light md:hidden">
+                <li>
+                  <div class="h-[5rem] sm:h-[4rem]">
+                    <div
+                      class="relative rounded-2xl bg-green-700 p-3 px-6 font-bold text-white sm:absolute"
+                    >
+                      <p>Access to a Wide Network of Hotels 01</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p>
+                      By partnering with top global providers, we offer access
+                      to a wide range of reputable and high-quality hotels
+                      worldwide, enabling us to present the best options at
+                      competitive rates to our clients.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="h-[4rem]">
+                    <div
+                      class="relative text-nowrap rounded-2xl bg-green-700 p-3 px-6 font-bold text-white sm:absolute"
+                    >
+                      <p>
+                        Offline Settlement Capability
+                        <span class="ml-10">02</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <p>
+                      MangoTravel offers offline settlement options, providing
+                      greater flexibility in managing payments and transactions.
+                      This feature is particularly suited for businesses that
+                      prefer traditional payment methods.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="h-[4rem]">
+                    <div
+                      class="relative text-nowrap rounded-2xl bg-green-700 p-3 px-6 font-bold text-white sm:absolute"
+                    >
+                      <p>
+                        Advanced Reporting
+                        <span class="ml-24">03</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <p>
+                      Precise reporting tools for tracking and managing
+                      reservations and expenses.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="h-[4rem]">
+                    <div
+                      class="relative text-nowrap rounded-2xl bg-green-700 p-3 px-6 font-bold text-white sm:absolute"
+                    >
+                      <p>
+                        24/7 Support
+                        <span class="ml-[9.5rem]">04</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <p>
+                      A round-the-clock support team to address your issues and
+                      needs.
+                    </p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
-      <section class="m-auto my-40 flex max-w-[80rem] items-center">
+      <section
+        class="m-auto my-40 flex max-w-[80rem] flex-col items-center gap-8 px-4 md:flex-row"
+      >
         <div class="relative basis-[45%]">
           <svg
-            class="absolute -left-8"
+            class="absolute -left-8 mid-sm:hidden"
             width="36"
             height="116"
             viewBox="0 0 36 116"
@@ -349,7 +585,7 @@
 
           <img src="/assets/images/about.png" alt="" />
         </div>
-        <div class="basis-[55%] space-y-10">
+        <div class="basis-[55%] space-y-10 px-4">
           <div>
             <p class="text-orange-400">Mangotravel</p>
             <p>
@@ -382,12 +618,12 @@
           </div>
         </div>
       </section>
-      <section class="m-auto flex max-w-[80rem] gap-8">
+      <section class="m-auto flex max-w-[80rem] flex-col gap-8 md:flex-row">
         <div
-          class="relative rounded-br-[5rem] rounded-tl-[5rem] bg-orange-400 p-8 px-24"
+          class="relative rounded-br-[5rem] rounded-tl-[5rem] bg-orange-400 p-8 px-6 md:px-24"
         >
           <svg
-            class="absolute -top-20 left-0 -z-10"
+            class="absolute -top-20 left-0 -z-10 w-[90%] md:w-[109%]"
             width="1118"
             height="162"
             viewBox="0 0 1118 162"
@@ -410,7 +646,9 @@
             <button data-tab-target="#tab3" class="tab-link">Suppliers</button>
           </div>
           <div id="tab1" class="tab-content active-tab-content">
-            <div class="mt-4 grid grid-cols-7 gap-7">
+            <div
+              class="mt-4 grid grid-cols-4 gap-7 md:grid-cols-5 lg:grid-cols-7"
+            >
               <a href="">
                 <img src="/assets/images/image.png" alt="" />
               </a>
@@ -520,7 +758,9 @@
           </div>
 
           <div id="tab2" class="tab-content hidden">
-            <div class="mt-4 grid grid-cols-7 gap-7">
+            <div
+              class="mt-4 grid grid-cols-4 gap-7 md:grid-cols-5 lg:grid-cols-7"
+            >
               <a href="">
                 <img src="/assets/images/Rectangle 1414.png" alt="" />
               </a>
@@ -588,7 +828,9 @@
           </div>
 
           <div id="tab3" class="tab-content hidden">
-            <div class="mt-4 grid grid-cols-7 gap-7">
+            <div
+              class="mt-4 grid grid-cols-4 gap-7 md:grid-cols-5 lg:grid-cols-7"
+            >
               <a href="">
                 <img src="/assets/images/Rectangle 1414.png" alt="" />
               </a>
@@ -640,7 +882,7 @@
             </div>
           </div>
         </div>
-        <div class="basis-[30%]">
+        <div class="basis-[30%] p-4">
           <div class="flex justify-between">
             <h1 class="text-2xl font-bold">
               <span class="text-orange-400">Our</span> <br />
@@ -683,7 +925,9 @@
           </div>
         </div>
       </section>
-      <section class="m-auto my-56 flex max-w-[80rem] gap-7 *:basis-full">
+      <section
+        class="m-auto my-56 flex max-w-[80rem] flex-col gap-7 *:basis-full md:flex-row"
+      >
         <div class="ml-3">
           <h1 class="relative text-3xl font-bold">
             Contact Us!
@@ -761,16 +1005,16 @@
             </div>
           </div>
         </div>
-        <div class="relative rounded-3xl bg-orange-400">
+        <div class="relative my-[12.5rem] rounded-3xl bg-orange-400 md:my-0">
           <div
-            class="absolute inset-0 -bottom-9 -top-9 left-6 right-6 rounded-3xl bg-[#FFE9C8]"
+            class="absolute inset-0 -bottom-9 -top-9 left-2 right-2 h-[22rem] rounded-3xl bg-[#FFE9C8] md:left-6 md:right-6 md:h-auto"
           >
             <div
-              class="absolute inset-0 -bottom-16 -top-16 left-6 right-6 rounded-3xl bg-gray-200"
+              class="absolute inset-0 -bottom-16 -top-16 left-2 right-2 rounded-3xl bg-gray-200 md:left-6 md:right-6"
             >
               <form action="" class="space-y-5 p-5">
                 <div class="flex items-center justify-between gap-3">
-                  <div>
+                  <div class="w-full">
                     <label for="">First Name</label>
                     <div class="w-full rounded-full bg-white p-2">
                       <input
@@ -781,7 +1025,7 @@
                       />
                     </div>
                   </div>
-                  <div>
+                  <div class="w-full">
                     <label for="">Last Name</label>
                     <div class="rounded-full bg-white p-2">
                       <input
@@ -843,7 +1087,7 @@
       class="m-auto mt-32 max-w-[80rem] rounded-t-[4rem] bg-orange-400 p-6"
     >
       <div
-        class="m-auto flex max-w-[65rem] items-center gap-8 border-b border-b-white pb-5"
+        class="m-auto flex max-w-[65rem] flex-col items-start gap-8 border-b border-b-white pb-5 md:flex-row md:items-center"
       >
         <div class="space-y-4">
           <img src="/assets/images/logo-white.png" alt="" />
@@ -887,7 +1131,7 @@
           <div class="mt-4 flex overflow-hidden rounded-2xl bg-white">
             <input
               type="text"
-              class="p-3 px-7 outline-none"
+              class="w-full p-3 px-7 outline-none md:w-auto"
               placeholder="Enter The Email Address.."
             />
             <div

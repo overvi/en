@@ -16,6 +16,7 @@ export default {
         "travel-small": "url(./assets/images/travel-small.png)",
         header: "url(./assets/images/header.png)",
         benefits: "url(./assets/images/benefits.png)",
+        "header-small": "url(./assets/images/heading-small.png)",
       },
       backgroundPosition: {
         start: "initial",

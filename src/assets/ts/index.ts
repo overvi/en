@@ -20,3 +20,17 @@ tabLinks.forEach((link) => {
     }
   });
 });
+
+const toggleSidebar = document.querySelector(".toggle-sidebar");
+const sidebar = document.querySelector(".sidebar");
+
+toggleSidebar?.addEventListener("click", () => {
+  sidebar?.classList.toggle("hidden");
+});
+
+window.addEventListener("click", (ev) => {
+  const target = ev.target as HTMLElement;
+  if (!target.closest(".sidebar-content , .toggle-sidebar")) {
+    sidebar?.classList.add("hidden");
+  }
+});
