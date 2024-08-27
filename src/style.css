@@ -57,3 +57,9 @@
     @apply font-['Yekan','sens-serif'];
   }
 }
+
+@layer utilities {
+  .active-tab {
+    @apply relative font-bold text-white after:absolute after:-bottom-4 after:block after:h-[3px] after:w-full after:rounded-3xl after:bg-white;
+  }
+}

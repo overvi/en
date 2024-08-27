@@ -14,6 +14,8 @@ export default {
       backgroundImage: {
         travel: "url(./assets/images/travel.png)",
         "travel-small": "url(./assets/images/travel-small.png)",
+        header: "url(./assets/images/header.png)",
+        benefits: "url(./assets/images/benefits.png)",
       },
       backgroundPosition: {
         start: "initial",
@@ -25,6 +27,8 @@ export default {
       },
       colors: {
         "green-700": "#2DB674",
+        "orange-400": "#FBB040",
+        "gray-200": "#F9F9FB",
       },
     },
   },
