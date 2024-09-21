@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="../../output.css" />
   </head>
   <body>
     <main>
       <div
-        class="flex flex-col gap-[11rem] md:flex-row lg:gap-[7rem] lg:px-6 lg:pt-6"
+        class="items-[initial] flex flex-col gap-[11rem] md:flex-row md:items-center lg:gap-[7rem] lg:px-6 lg:pt-6"
       >
         <div
-          class="md:bg-start rounded-tr-0 relative flex flex-col justify-between rounded-b-[2rem] bg-[#eab653] bg-cover bg-center bg-no-repeat pt-8 sm:flex-row md:block md:basis-[70%] md:rounded-b-none md:rounded-tr-[10rem] md:p-8"
+          class="rounded-tr-0 relative flex flex-col justify-between rounded-b-[2rem] bg-[#eab653] bg-cover bg-center bg-no-repeat pt-8 sm:flex-row md:block md:basis-[70%] md:rounded-b-none md:rounded-tr-[10rem] md:bg-start md:p-8"
         >
           <div class="static -right-48 top-0 h-full md:absolute">
             <img class="h-full" src="/assets/images/suitcase.png" alt="" />
@@ -35,14 +35,14 @@
             </p>
           </div>
           <div
-            class="bg-black-19 mt-5 hidden w-fit rounded-b-3xl rounded-r-3xl p-5 md:block"
+            class="mt-5 hidden w-fit rounded-b-3xl rounded-r-3xl bg-black-19 p-5 md:block"
           >
             <a class="block text-white" href="">Have you already sign up?</a>
             <a
-              href="/contact/sign-in/"
+              href="/contact/sign-up/"
               class="mt-4 flex items-center gap-2 text-2xl font-bold uppercase text-white"
             >
-              Sign In
+              Sign Up
               <svg
                 width="32"
                 height="32"
@@ -63,66 +63,73 @@
             </a>
           </div>
         </div>
-        <div class="xl:basis-full basis-[60%] px-8 py-5">
+        <div class="basis-[60%] px-8 py-5 xl:basis-full">
           <div class="flex flex-col items-center justify-center gap-5">
             <img width="200" src="/assets/images/travel-logo.png" alt="" />
             <form action="" class="w-full space-y-6 font-[500] md:w-[18rem]">
               <div>
-                <label for="">Your Name</label>
-                <div class="w-full rounded-full bg-gray-300 p-2">
+                <label for="">Username</label>
+                <div class="rounded-full bg-gray-300 p-2">
                   <input
                     class="bg-transparent px-3 outline-none placeholder:text-sm"
                     type="text"
-                    placeholder="John Doe"
+                    placeholder="abcd"
                     name=""
                     id=""
                   />
                 </div>
               </div>
               <div>
-                <label for="">Company Name</label>
-                <div class="rounded-full bg-gray-300 p-2">
+                <label for="">Password</label>
+                <div class="flex items-center rounded-full bg-gray-300 p-2">
                   <input
-                    class="bg-transparent px-3 outline-none placeholder:text-sm"
-                    type="text"
-                    placeholder="Johnd"
+                    class="password-input w-full bg-transparent px-3 outline-none placeholder:text-sm"
+                    type="password"
+                    placeholder="12345678"
                     name=""
                     id=""
                   />
-                </div>
-              </div>
-              <div>
-                <label for="">Email</label>
-                <div class="rounded-full bg-gray-300 p-2">
-                  <input
-                    class="bg-transparent px-3 outline-none placeholder:text-sm"
-                    type="text"
-                    placeholder="abcd@gmail.com"
-                    name=""
-                    id=""
-                  />
-                </div>
-              </div>
-              <div>
-                <label for="">Phone Number</label>
-                <div class="rounded-full bg-gray-300 p-2">
-                  <input
-                    class="bg-transparent px-3 outline-none placeholder:text-sm"
-                    type="text"
-                    placeholder="(+555) 5555 5555"
-                    name=""
-                    id=""
-                  />
+                  <svg
+                    width="24"
+                    height="24"
+                    class="toggle-visibility z-50 !mr-3 block cursor-pointer"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.4"
+                      d="M21.2501 9.15004C20.7601 8.37004 20.2001 7.67004 19.6201 7.04004L15.8501 10.81C15.9701 11.18 16.0401 11.58 16.0401 12C16.0401 14.24 14.2301 16.04 12.0001 16.04C11.5801 16.04 11.1801 15.97 10.8101 15.85L7.3501 19.31C8.8101 20.13 10.3901 20.56 12.0001 20.56C13.7801 20.56 15.5101 20.04 17.0901 19.07C18.6701 18.09 20.0901 16.66 21.2501 14.84C22.2501 13.28 22.2501 10.72 21.2501 9.15004Z"
+                      fill="#ABABAB"
+                    />
+                    <path
+                      d="M14.0199 9.98001L9.97989 14.02C9.46989 13.5 9.13989 12.78 9.13989 12C9.13989 10.43 10.4199 9.14001 11.9999 9.14001C12.7799 9.14001 13.4999 9.47001 14.0199 9.98001Z"
+                      fill="#ABABAB"
+                    />
+                    <path
+                      opacity="0.4"
+                      d="M18.25 5.75005L14.86 9.14005C14.13 8.40005 13.12 7.96005 12 7.96005C9.76 7.96005 7.96 9.77005 7.96 12.0001C7.96 13.1201 8.41 14.1301 9.14 14.8601L5.76 18.2501H5.75C4.64 17.3501 3.62 16.2001 2.75 14.8401C1.75 13.2701 1.75 10.7201 2.75 9.15005C3.91 7.33005 5.33 5.90005 6.91 4.92005C8.49 3.96005 10.22 3.43005 12 3.43005C14.23 3.43005 16.39 4.25005 18.25 5.75005Z"
+                      fill="#ABABAB"
+                    />
+                    <path
+                      d="M14.8601 12C14.8601 13.57 13.5801 14.86 12.0001 14.86C11.9401 14.86 11.8901 14.86 11.8301 14.84L14.8401 11.83C14.8601 11.89 14.8601 11.94 14.8601 12Z"
+                      fill="#ABABAB"
+                    />
+                    <path
+                      d="M21.7699 2.23C21.4699 1.93 20.9799 1.93 20.6799 2.23L2.22988 20.69C1.92988 20.99 1.92988 21.48 2.22988 21.78C2.37988 21.92 2.56988 22 2.76988 22C2.96988 22 3.15988 21.92 3.30988 21.77L21.7699 3.31C22.0799 3.01 22.0799 2.53 21.7699 2.23Z"
+                      fill="#ABABAB"
+                    />
+                  </svg>
                 </div>
               </div>
               <button
                 type="button"
                 class="modal-toggle w-full rounded-full bg-green-600 p-3 font-bold text-white"
               >
-                Sign Up
+                Sign In
               </button>
               <div
-                class="modal bg-black-19 fixed inset-0 !mt-0 flex hidden items-center justify-center"
+                class="modal fixed inset-0 !mt-0 flex hidden items-center justify-center bg-black-19"
               >
                 <div class="modal-content px-5">
                   <div
@@ -180,6 +187,14 @@
         </div>
       </div>
     </main>
-    <script type="module" src="/assets/ts/contact.ts"></script>
+    <script type="module" src="/assets/js/contact.js"></script>
+    <script>
+      const toggleVisibility = document.querySelector(".toggle-visibility");
+      const input = document.querySelector(".password-input");
+
+      toggleVisibility.addEventListener("click", () => {
+        input.type = input.type == "text" ? "password" : "text";
+      });
+    </script>
   </body>
 </html>
