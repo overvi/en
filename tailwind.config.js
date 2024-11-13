@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,ts}"],
+  content: ["./**/*.{html,ts}"],
   theme: {
     screens: {
       sm: "460px",
@@ -10,7 +10,9 @@ export default {
       lg: "1100px",
       xl: "1320px",
     },
+
     extend: {
+    
       backgroundImage: {
         travel: "url(./assets/images/travel.png)",
         "travel-small": "url(./assets/images/travel-small.png)",
@@ -31,6 +33,10 @@ export default {
         "orange-400": "#FBB040",
         "gray-200": "#F9F9FB",
       },
+      fontSize : {
+        "5xl" :"3.75rem",
+        "4.5xl" : "2.5rem"
+      }
     },
   },
   plugins: [],
